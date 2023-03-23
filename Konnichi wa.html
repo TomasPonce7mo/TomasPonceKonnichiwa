@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src = convertirnombre.js></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+        let s = "";
+        let n = parseInt(prompt("Ingrese numero de nombres"));
+        if(n>=1 && n<=1000){
+        for(let i=0;i<n;i++){
+        let v = prompt('ingrese nombre:', '');
+        s = s + "Konnichi wa, " + ConvertirNombre(v) + "-san <br> ";
+        }
+        
+        document.write(s);
+    }
+    else {
+        alert("Numero invalido (debe ser entre 1 y 1000)");
+    }
+    </script>        
+</body>
+</html>
